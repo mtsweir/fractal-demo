@@ -1,4 +1,4 @@
 title: Example component
 context:
-    heading: This is a heading
-    text: This is an example component
+    heading: H1 heading
+    text: paragraph example

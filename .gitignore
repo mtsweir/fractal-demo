@@ -1,0 +1,9 @@
+# fractal framework-bundles
+/node_modules/
+/public/
+
+# References
+# Smashing Mag fractal build article:
+# https://www.smashingmagazine.com/2018/07/pattern-library-first-css/
+# Article update - gulpfile update file to support Gulp version 4:
+# https://gist.github.com/Chapoton/14f4747c1a0ea635dcc2433769615060

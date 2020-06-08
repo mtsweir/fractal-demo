@@ -1,8 +1,6 @@
 ---
-title: Fractal Demo
+title: Design principles
 ---
-
-This is your index page. You can edit its contents at `docs/01-index.hbs`
 
 This is some documentation for the project. Still to do:
 

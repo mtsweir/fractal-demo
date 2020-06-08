@@ -1,6 +1,10 @@
-# fractal framework-bundles
+# directories
 /node_modules/
 /public/
+/build/
+
+# files
+.gitkeep
 
 # References
 # Smashing Mag fractal build article:

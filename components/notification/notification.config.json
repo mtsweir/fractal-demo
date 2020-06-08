@@ -1,0 +1,21 @@
+{
+	"title": "Notification Banner",
+	"context": {
+		"message": "This is the default banner"
+	},
+	"variants": [
+		{
+			"name": "success",
+			"context": {
+				"modifier": "success",
+				"message": "This is a success banner"
+			}
+		},
+		{
+			"name": "error",
+			"context": {
+				"message": "This is a error banner"
+			}
+		}
+	]
+}

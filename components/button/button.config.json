@@ -1,0 +1,19 @@
+{
+	"title": "Button",
+	"context": {
+  	"button": {
+			"text": "Primary Button"
+		}
+	},
+	"variants": [
+		{
+			"name": "Secondary",
+			"context": {
+				"modifier": "secondary",
+				"button": {
+					"text": "Secondary button"
+				}
+			}
+		}
+	]
+}

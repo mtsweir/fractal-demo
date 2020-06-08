@@ -10,5 +10,6 @@
 				"modifier": "flip"
 			}
 		}
-	]
+	],
+	"notes": "These are some **notes** about the component"
 }

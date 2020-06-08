@@ -35,3 +35,18 @@ fractal.web.set('static.path', path.join(__dirname, 'public'));
  */
 
 fractal.web.set('builder.dest', __dirname + '/build');
+
+// require the Mandelbrot theme module
+const mandelbrot = require('@frctl/mandelbrot');
+
+// create a new instance with custom config options
+const myCustomisedTheme = mandelbrot({
+	skin: 'purple',
+	// any other theme configuration values here
+});
+
+// tell Fractal to use the configured theme by default
+fractal.web.theme(myCustomisedTheme);
+
+// Set default component status, default is: Ready
+fractal.components.set('default.status', 'prototype');

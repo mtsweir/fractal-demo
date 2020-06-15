@@ -1,1 +1,0 @@
-Use an Alert to communicate an essential piece of information to a user, such as successful completion of a task or an internal system error.

@@ -1,5 +1,3 @@
-// Updated gulpfile for the following article: https://www.smashingmagazine.com/2018/07/pattern-library-first-css/
-
 'use strict';
 
 const gulp = require('gulp');

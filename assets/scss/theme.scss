@@ -1,0 +1,46 @@
+// Config
+@import "colors";
+
+.Prose {
+	max-width: 100%;
+}
+
+.design-tokens {
+	hr {
+		margin: 1.2rem 0;
+		border-bottom: 1px #e8e8e8 solid;
+	}
+}
+
+
+/* Design token grid */
+
+@media (min-width: 600px) {
+  .design-token-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "key value example";
+  }
+  .design-token-grid__value {
+   padding: 0 1.2rem;
+  }
+}
+.design-token-grid__value {
+  grid-area: value;
+}
+.design-token-grid__value h1 {
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+.design-token-grid__key {
+  grid-area: key;
+}
+.design-token-grid__example {
+  grid-area: example;
+}
+
+.eg-bg-primary {
+	background-color: $color1;
+}

@@ -1,52 +1,26 @@
 'use strict';
 
-/*
-* Require the path module
-*/
 const path = require('path');
-
-/*
- * Require the Fractal module
- */
 const fractal = module.exports = require('@frctl/fractal').create();
 
-/*
- * Give your project a title.
- */
 fractal.set('project.title', 'Fractal Demo');
 
-/*
- * Tell Fractal where to look for components.
- */
 fractal.components.set('path', path.join(__dirname, 'components'));
 
-/*
- * Tell Fractal where to look for documentation pages.
- */
 fractal.docs.set('path', path.join(__dirname, 'docs'));
+fractal.docs.set('ext', '.html');
 
-/*
- * Tell the Fractal web preview plugin where to look for static assets.
- */
 fractal.web.set('static.path', path.join(__dirname, 'public'));
+fractal.web.set('builder.dest', path.join(__dirname, 'build'));
 
-/*
- * Tell Fractal where to export the build destination.
- */
-
-fractal.web.set('builder.dest', __dirname + '/build');
-
-// require the Mandelbrot theme module
+// Theme configuration
 const mandelbrot = require('@frctl/mandelbrot');
-
-// create a new instance with custom config options
 const myCustomisedTheme = mandelbrot({
-	skin: 'purple',
-	// any other theme configuration values here
+	skin: 'white',
+	styles: [
+		'default',
+		'/css/theme.css'
+	]
 });
 
-// tell Fractal to use the configured theme by default
 fractal.web.theme(myCustomisedTheme);
-
-// Set default component status, default is: Ready
-fractal.components.set('default.status', 'prototype');

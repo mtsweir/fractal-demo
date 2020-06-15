@@ -1,2 +1,8 @@
-@import "variables";
+// Config
+@import "colors";
+
+// Core
+@import "reset";
+
+// Components
 @import "../../components/**/*.scss";

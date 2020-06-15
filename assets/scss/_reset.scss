@@ -1,0 +1,60 @@
+//
+// Reset
+//
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+nav,
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+main,
+section {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+div,
+iframe {
+	margin: 0;
+	padding: 0;
+}
+
+
+// Document
+// -----------------------------------------------------------------------------
+// 1. Change from `box-sizing: content-box` so that `width` is not affected by
+// `padding` or `border`.
+// 2. Make type rendering look crisper.
+// 3. Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.
+
+html {
+	box-sizing: border-box; // 1
+	color: #000;
+	font-family: sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.5;
+	-webkit-text-size-adjust: 100%; // 3
+	-moz-osx-font-smoothing: grayscale; // 2
+	-webkit-font-smoothing: antialiased; // 2
+	scroll-behavior: smooth;
+}
+
+
+// Body
+// 1. Remove the margin in all browsers.
+
+body {
+	min-height: 100vh;
+	margin: 0; // 1
+	background-color: $body-background-color;
+}
